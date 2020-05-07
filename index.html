@@ -7,22 +7,23 @@
   <meta name="description" content="Содержимое мета-тега Description"/>
   <meta name="keywords" content="5-6 слов"/>
   <title>Document</title>
+  <link rel="stylesheet" href="revealator-master/fm.revealator.jquery.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="slick/slick.css"/>
   <link rel="stylesheet" href="slick/slick-theme.css"/>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-  <div class="header">
+  <div data-aos="fade-right" id="top" class="header">
     <div class="nav">
       <div class="container">
         <div class="nav__wrap">
           <div class="nav__logo"> <img src="img/logo.svg" alt="logo"> </div>
           <ul class="nav__list">
-            <li class="nav__list__item"><a href="#">Menu</a></li>
-            <li class="nav__list__item"><a href="#">Recipes</a></li>
-            <li class="nav__list__item"><a href="#">Chefs</a></li>
-            <li class="nav__list__item"><a href="#">Contacts</a></li>
+            <li class="nav__list__item"><a href="#dishes">Menu</a></li>
+            <li class="nav__list__item"><a href="#recipes">Recipes</a></li>
+            <li class="nav__list__item"><a href="#chefs">Chefs</a></li>
+            <li class="nav__list__item"><a href="#contact">Contacts</a></li>
           </ul>
         </div>
       </div>
@@ -39,39 +40,39 @@
           </p>
         </div>
         <a href="#" class="header__btn btn">Order Now</a>
-        <div class="header__info">
-          <div class="header__card">
-            <div class="header__card__img">
+        <div class="contact__info">
+          <div class="contact__card">
+            <div class="contact__card__img">
               <img src="img/clock.svg" alt="">
             </div>
-            <a href="#" class="header__card__title">
+            <a href="#" class="contact__card__title">
               Today 10:00 am - 7:00 pm
             </a>
-            <div class="header__card__subtitle">
+            <div class="contact__card__subtitle">
               Working hours
             </div>
           </div>
 
-          <div class="header__card">
-            <div class="header__card__img">
+          <div class="contact__card">
+            <div class="contact__card__img">
               <img src="img/Location.svg" alt="">
             </div>
-            <a href="#" class="header__card__title">
+            <a href="#" class="contact__card__title">
               Velyka Vasylkivska 100
             </a>
-            <div class="header__card__subtitle">
+            <div class="contact__card__subtitle">
               Get Directions
             </div>
           </div>
 
-          <div class="header__card">
-            <div class="header__card__img">
+          <div class="contact__card">
+            <div class="contact__card__img">
               <img src="img/Phone.svg" alt="">
             </div>
-            <a href="#" class="header__card__title">
+            <a href="#" class="contact__card__title">
               +38 (063)833 24 15
             </a>
-            <div class="header__card__subtitle">
+            <div class="contact__card__subtitle">
               Call Online
             </div>
           </div>
@@ -79,7 +80,7 @@
       </div>
     </div>
   </div>
-  <div class="about">
+  <div id="about" class="about">
     <div class="container">
       <div class="about__wrap">
         <div class="content__title">
@@ -121,9 +122,9 @@
     </div>
   </div>
 
-  <div class="work">
+  <div id="work" class="work">
     <div class="container">
-      <div class="work__wrap">
+      <div class="work__wrap revealator-fade revealator-delay1 revealator-once">
         <div class="content__title">
           how it works
           <div class="content__title-bg">
@@ -164,7 +165,7 @@
           </div>
 
 
-          <div class="work__card">
+          <div class="work__card ">
             <div class="work__card__title">
               fast deliveries
             </div>
@@ -179,7 +180,7 @@
           </div>
 
 
-          <div class="work__card">
+          <div class="work__card ">
             <div class="work__card__title">
               tasty meals
             </div>
@@ -197,7 +198,7 @@
     </div>
   </div>
 
-  <div class="dishes">
+  <div id="dishes" class="dishes">
     <div class="container">
       <div class="content__title">
         Dish Of The Day 
@@ -296,7 +297,7 @@
           </div>
         </div>
 
-        <div class="dishes__card">
+        <div class="dishes__card wow flash">
           <div class="dishes__card__img">
             <img class="dishes__img" src="img/dishes_4.svg" alt="">
             <a href="#" class="dishes__share">
@@ -387,7 +388,7 @@
     </div>
   </div>
 
-  <div class="chefs">
+  <div id="chefs" class="chefs">
     <div class="container">
       <div class="content__title">
         This month's chefs
@@ -495,7 +496,7 @@
   </div>
 
 
-    <div class="recipes">
+    <div id="recipes" class="recipes">
       <div class="container">
         <div class="content__title">
           Recipes From Our Chefs
@@ -625,7 +626,7 @@
     </div>
 
 
-    <div class="social">
+    <div id="social" class="social">
       <div class="container">
         <div class="content__title">
           We in Social
@@ -666,21 +667,21 @@
               </div>
               
               <div class="social__date">
-                24 Jun at 16:20 pm
+                4 Jun at 19:00 pm
               </div>
               <div class="social__descr">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet, consectetur adipiscing
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet, consectetur adipiscing porem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet, consectetur adipiscing
                 </p>
               </div>
               <div class="social__name">
-                <a href="#">@DennisFerguson</a>
+                <a href="#">@Vadim</a>
               </div>
             </div>
           </div>
 
 
-          <div class="social__card">
+          <div class="social__card social__card__instagram">
             <div class="social__top">
               <div class="social__logo">
                 <div class="social__logo__img">
@@ -691,20 +692,49 @@
                 </div>
               </div>
               <a href="#" class="social__btn">follow us</a>
-            </div>
-            <div class="social__hr">
-              <hr>
-            </div>
+            </div>  
             <div class="social__content">
               <div class="social__inst">
-                <div class="social__inst__arrow"><img src="img/left-arrow.svg" alt=""></div>
+                <a href="#" class="social__inst__arrow"><img src="img/left-arrow.svg" alt=""></a>
                 <img class="social__inst__img" src="img/instagram_1.svg" alt="">
+              </div>
+              <div class="social__inst">
+                <a href="#" class="social__inst__arrow"><img src="img/left-arrow.svg" alt=""></a>
+                <img class="social__inst__img" src="img/instagram_2.svg" alt="">
+              </div>
+              <div class="social__inst">
+                <a href="#" class="social__inst__arrow"><img src="img/left-arrow.svg" alt=""></a>
+                <img class="social__inst__img" src="img/instagram_3.svg" alt="">
+              </div>
+              <div class="social__inst">
+                <a href="#" class="social__inst__arrow"><img src="img/left-arrow.svg" alt=""></a>
+                <img class="social__inst__img" src="img/instagram_4.svg" alt="">
+              </div>
+              <div class="social__inst">
+                <a href="#" class="social__inst__arrow"><img src="img/left-arrow.svg" alt=""></a>
+                <img class="social__inst__img" src="img/instagram_5.svg" alt="">
+              </div>
+              <div class="social__inst">
+                <a href="#" class="social__inst__arrow"><img src="img/left-arrow.svg" alt=""></a>
+                <img class="social__inst__img" src="img/instagram_6.svg" alt="">
+              </div>
+              <div class="social__inst">
+                <a href="#" class="social__inst__arrow"><img src="img/left-arrow.svg" alt=""></a>
+                <img class="social__inst__img" src="img/instagram_2.svg" alt="">
+              </div>
+              <div class="social__inst">
+                <a href="#" class="social__inst__arrow"><img src="img/left-arrow.svg" alt=""></a>
+                <img class="social__inst__img" src="img/instagram_1.svg" alt="">
+              </div>
+              <div class="social__inst">
+                <a href="#" class="social__inst__arrow"><img src="img/left-arrow.svg" alt=""></a>
+                <img class="social__inst__img" src="img/instagram_5.svg" alt="">
               </div>
             </div>
           </div>
 
 
-          <div class="social__card">
+          <div class="social__card social__card__fb">
             <div class="social__top">
               <div class="social__logo">
                 <div class="social__logo__img">
@@ -728,28 +758,82 @@
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet, consectetur adipiscing
                 </p>
               </div>
-              <div class="social__name">
-                <a href="#">@DennisFerguson</a>
-              </div>
               
               <div class="social__date">
-                24 Jun at 16:20 pm
+                26 Jun at 18:40 pm
               </div>
               <div class="social__descr">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet, consectetur adipiscing
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet, consectetur adipiscing <br>                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet, consectetur adipiscing
                 </p>
               </div>
-              <div class="social__name">
-                <a href="#">@DennisFerguson</a>
-              </div>
+
             </div>
           </div>
         </div>
       </div>
     </div>
 
+    <div id="contact" class="contact">
+      <div class="container">
+        <div class="contact__wrap">
+          <div class="contact__info">
+            <div class="contact__card">
+              <div class="contact__card__img">
+                <img src="img/clock.svg" alt="">
+              </div>
+              <a href="#" class="contact__card__title">
+                Today 10:00 am - 7:00 pm
+              </a>
+              <div class="contact__card__subtitle">
+                Working hours
+              </div>
+            </div>
+  
+            <div class="contact__card">
+              <div class="contact__card__img">
+                <img src="img/Location.svg" alt="">
+              </div>
+              <a href="#" class="contact__card__title">
+                Velyka Vasylkivska 100
+              </a>
+              <div class="contact__card__subtitle">
+                Get Directions
+              </div>
+            </div>
+  
+            <div class="contact__card">
+              <div class="contact__card__img">
+                <img src="img/Phone.svg" alt="">
+              </div>
+              <a href="#" class="contact__card__title">
+                +38 (063)833 24 15
+              </a>
+              <div class="contact__card__subtitle">
+                Call Online
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="hr">
+    <div id="footer" class="footer">
+      <div class="container">
+        <div class="footer__wrap">
+          <div class="footer__logo">
+             <a href="#"><img src="img/logo.svg" alt=""></a>
+          </div>
+          <div class="footer__rights"><a href="#">© Designed by Yellow Snow. All Rights Reserved. </a></div>
+        </div>
+      </div>
+    </div>
+    <div class="top">
+      <a href="#top"><img src="img/left-arrow.svg" alt=""></a>
 
+    </div>
+  <script src="revealator-master/jquery-1.11.3.min.js"></script>
+  <script src="revealator-master/fm.revealator.jquery.js"></script>
   <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script src="slick/slick.min.js"></script>

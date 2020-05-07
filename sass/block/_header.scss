@@ -68,31 +68,4 @@
   &__btn {
     margin-top: 40px;
   }
-  &__info {
-    margin-top: 70px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-  }
-  &__card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    &__title {
-      margin-top: 15px;
-      font-size: 16px;
-      color: #FFFFFF;
-      &:hover {
-        color: white;
-      }
-    }
-    &__subtitle {
-      margin-top: 5px;
-      font-weight: 500;
-      font-size: 14px;
-      color: rgba(255, 255, 255, 0.527);
-    }
-  }
 }

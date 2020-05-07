@@ -2,6 +2,25 @@
   padding: 0;
   margin: 0;
 }
+@media (max-width: 768px) {
+  .animated {
+    -o-transition-property: none !important;
+    -moz-transition-property: none !important;
+    -ms-transition-property: none !important;
+    -webkit-transition-property: none !important;
+    transition-property: none !important;
+    -o-transform: none !important;
+    -moz-transform: none !important;
+    -ms-transform: none !important;
+    -webkit-transform: none !important;
+    transform: none !important;
+    -webkit-animation: none !important;
+    -moz-animation: none !important;
+    -o-animation: none !important;
+    -ms-animation: none !important;
+    animation: none !important;
+  }
+}
 body {
   font-family: Helvetica;
   margin: 0;
@@ -204,7 +223,30 @@ select {
     }
   }
 }
-
+.hr {
+  background: #303030;
+  height: 2px;
+  margin: 0;
+}
+.top {
+  position: fixed;
+  bottom: 60px;
+  right: 30px;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #303030;
+  border-radius: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  transition: 0.5s all;
+  &:hover {
+    border: 2px solid #34C759;
+  }
+  img {
+    transform: rotate(90deg);
+  }
+}
 @import '../sass/block/button';
 @import '../sass/block/footer';
 @import '../sass/block/header';
@@ -214,3 +256,4 @@ select {
 @import '../sass/block/chefs';
 @import '../sass/block/recipes';
 @import '../sass/block/social';
+@import '../sass/block/contact';
