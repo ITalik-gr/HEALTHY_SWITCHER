@@ -3,17 +3,422 @@
 }
 
 @media (max-width: 1200px) { //992
-
+  .header {
+    &__title {
+      font-size: 60px;
+      line-height: 67px;
+    }
+    &__btn {
+      padding: 20px 47px;
+    }
+  }
+  .prev,
+  .next {
+    display: none!important;
+  }
+  .work {
+    &__card {
+      margin-bottom: 20px;
+      &-wrap {
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+    }
+  }
+  .dishes__wrap {
+    justify-content: space-around;
+  }
+  .recipes {
+    &__wrap {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+  .content {
+    &__title {
+      &-bg {
+        font-size: 90px;
+        top: 35%;
+      }
+    }
+  }
+  .social {
+    &__wrap {
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    &__card {
+      margin-bottom: 15px;
+    }
+  }
 }
 
 @media (max-width: 992px) { //768 
-
+  .nav {
+    &__list {
+      &__item {
+        a {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+  .header {
+    &__title {
+      font-size: 50px;
+      line-height: 50px;
+    }
+    &__descr {
+      p {
+        font-size: 15px;
+        line-height: 20px;
+      }
+    }
+    &__btn {
+      padding: 15px 40px;
+      font-size: 16px;
+    }
+  }
+  .contact {
+    &__card {
+      &__title {
+        font-size: 14px;
+      }
+      &__subtitle {
+        font-size: 14px;
+        margin-top: 2px;
+      }
+    }
+  }
+  .content {
+    &__title {
+      font-size: 25px;
+      &-bg {
+        font-size: 70px;
+        top: 47%;
+      }
+    }
+  }
+  .about {
+    &__descr {
+      p {
+        max-width: 635px;
+      }
+    }
+    &-slider {
+      &__card {
+        img {
+          width: 30%;
+        }
+      }
+    }
+  }
+  .dishes {
+    &__card {
+      max-width: 310px;
+      padding-bottom: 20px;
+      &__title {
+        font-size: 28px;
+      }
+      &__subtitle {
+        font-size: 11px;
+      }
+    }
+  }
+  .chefs {
+    &__user-name {
+      font-size: 16px;
+      margin-left: 20px;
+    }
+    &__image {
+      img {
+        display: none;
+        &:first-child {
+          display: block;
+        }
+      }
+    }
+  }
+  .social {
+    &__card {
+      min-width: 350px;
+    }
+    &__wrap {
+      flex-direction: column;
+    }
+  }
 }
 
 @media (max-width: 768px) { //576 
-
+  .nav {
+    &__list {
+      &__item {
+            margin: 0px 10px;
+        a {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  .header {
+    &__title {
+      font-size: 35px;
+      line-height: 40px;
+    }
+    &__descr {
+      p {
+        font-size: 14px;
+        line-height: 20px;
+        max-width: 400px;
+      }
+    }
+    &__btn {
+      font-size: 14px;
+      padding: 12px 37px;
+    }
+  }
+  .contact {
+    &__info {
+      margin-top: 50px;
+    }
+  }
+  .content {
+    &__hr {
+      margin-top: 18px;
+      margin-bottom: 30px;
+    }
+    &__title {
+      font-size: 23px;
+      padding-top: 40px;
+      &-bg {
+        font-size: 60px;
+        top: 50%;
+      }
+    }
+  }
+  .about {
+    &__wrap {
+      padding: 0px 0px 70px;
+    }
+    &__descr {
+      p {
+        max-width: 435px;
+      }
+    }
+    &-slider {
+      &__wrap {
+        display: none;
+      }
+    }
+  }
+  .dishes {
+    &__card {
+      &__title {
+        font-size: 24px;
+      }
+      &__descr {
+        margin-top: 10px;
+        font-size: 12px;
+      }
+      &__content-bottom {
+        justify-content: center;
+      }
+    }
+    &__rate {
+      display: none;
+    }
+  }
+  .chefs {
+    &__image {
+      img {
+        display: block;
+        &:last-child {
+          display: none;
+        }
+      }
+    }
+    &__user-data {
+      img {
+        display: none;
+      }
+    }
+  }
+  .recipes {
+    &__main-example {
+      min-width: 510px;
+      padding: 35px 50px;
+      margin-bottom: 15px;
+      &__title {
+        margin-top: 15px;
+        font-size: 22px;
+      }
+    }
+    &__card {
+      &__title {
+        font-size: 14px;
+        line-height: 23px;
+      }
+    }
+  }
+  .social {
+    .content__title-bg {
+      top: 15%;
+    }
+    &__descr {
+      font-size: 13px;
+      p {
+        min-width: 230px;
+      }
+    }
+  }
+  .contact {
+    &__info {
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
 }
 
 @media (max-width: 576px)  { //320
+  .nav {
+    &__logo {
+      display: none;
+    }
+    &__list {
+      &__item {
+        a {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  .header {
+    &__title {
+      font-size: 22px;
+      line-height: 30px;
+    }
+    &__descr {
+      p {
+        font-size: 13px;
+        line-height: 20px;
+        max-width: 230px;
+      }
+    }
+  }
+  .contact {
+    &__info {
+      justify-content: space-around;
+    }
+    &__card {
+      margin-bottom: 15px;
+      &__img {
+        display: none;
+      }
+      &__title {
+        font-size: 13px;
+      }
+    }
+  }
+  .content {
+    &__title {
+      font-size: 18px;
+      &-bg {
+        font-size: 53px;
+        top: 8%;
+      }
+    }
+  }
+  .about {
+    &__wrap {
+      padding: 0px 0px 30px;
+    }
+    &__descr {
+      font-size: 14px;
+      line-height: 27px;
+      p {
+        max-width: 245px;
+      }
+    }
+  }
+  .work {
+    .content__title-bg {
+      top: -120%;
+    }
+    &__card {
+      &__descr {
+        font-size: 12px;
+      }
+      &__title {
+        font-size: 20px;
+      }
+    }
+  }
+  .dishes {
+    &__img {
+      display: none;
+    }
+    &__card {
+      padding: 10px 20px;
+      &__descr {
+        p {
+          max-width: 220px;
+        }
+      }
+    }
+    &__share {
+      display: none;
+    }
+  }
+  .recipes {
+    &__main-example {
+      min-width: 280px;
+      margin-bottom: 15px;
+      padding: 20px 10px;
+      &__date {
+        margin-top: 15px;
+      }
+      &__title {
+        font-size: 18px;
+      }
+    }
+    &__card {
+      &__title {
+        font-size: 12px;
+        margin-bottom: 10px;
+      }
+      &__info {
+        display: none!important;
+      }
+    }
+  }
+  .social {
+    &__wrap {
+      justify-content: center;
+      align-items: center;
+    }
+    &__card {
+      min-width: 260px!important;
+      padding: 15px!important;
 
+      &__instagram {
+        // max-width: 270px;
+        // min-width: 260px;
+        .social__content {
+          display: none;
+        }
+        .social__top {
+          padding: 0px!important;
+        }
+      }
+    }
+    &__content {
+      display: none
+      }
+    &__descr {
+      font-size: 12px;
+    }
+    &__hr {
+      display: none;
+    }
+  }
 }

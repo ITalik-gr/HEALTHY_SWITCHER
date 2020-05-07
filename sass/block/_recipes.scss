@@ -2,7 +2,7 @@
 
   &__wrap {
     display: flex;
-    height: 455px;
+    min-height: 455px;
     justify-content: space-between;
   }
   &__main-example {
