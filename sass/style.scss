@@ -1,0 +1,216 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: Helvetica;
+  margin: 0;
+  background: #191919;
+
+}
+// ::-webkit-scrollbar-track { // задний фон
+//   background-color:#252525;
+// }
+// ::-webkit-scrollbar-thumb { // Бегунок
+//     -webkit-border-radius: 100px;
+//     border-radius: 100px;
+//     background-color:#303030;
+//     }
+// ::-webkit-scrollbar-thumb {
+//   -webkit-border-radius: 100px;
+//     border-radius: 100px;
+//     background-color:#303030b6;
+//     }
+
+::-webkit-scrollbar-button {
+  background-image:url('');
+  background-repeat:no-repeat;
+  width:6px;
+  height:0px
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color:#252525;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+
+    -webkit-border-radius: 100px;
+    border-radius: 100px;
+    background-color:#303030;
+  }
+  ::-webkit-scrollbar-thumb:hover{
+    background-color:#575757;
+    }
+  ::-webkit-resizer{
+  background-image:url('');
+  background-repeat:no-repeat;
+  width:4px;
+  height:0px
+  }
+  
+  ::-webkit-scrollbar{
+  width: 5px;
+  }
+body { 
+
+} 
+*,*::before,*::after {
+  box-sizing: border-box;
+
+}
+:focus,:active {
+  outline: none;
+}
+a:focus,a:active,a:hover {
+  outline: none;
+  text-decoration: none;
+}
+html,body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 0 1200px auto;
+}
+.m0 {
+  margin-bottom: 0!important;
+}
+
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+.btn {
+  padding: 26px 53px;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+  background: #34C759;
+  border-radius: 43px;
+  color: #1A1A1A;
+  transition: 0.6s all;
+  border: 2px solid #34C759;
+  &:hover {
+    color: rgba(255, 255, 255, 0.5);
+    border: 2px solid #303030;
+    background: #303030;
+  }
+}
+.content {
+  &__hr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 28px;
+    margin-bottom: 60px;
+    hr {
+      width: 60px;
+      height: 2px;
+      background: #34C759;
+    }
+  }
+  &__title {
+    padding-top: 100px;
+    position: relative;
+    font-size: 30px;
+    text-align: center;
+    color: #D9D9D9;
+    text-transform: capitalize;
+    z-index: 2;
+    &-bg {
+      top: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: -1;
+      position: absolute;
+      font-size: 100px;
+      color: #303030;
+    }
+  }
+}
+
+@import '../sass/block/button';
+@import '../sass/block/footer';
+@import '../sass/block/header';
+@import '../sass/block/about';
+@import '../sass/block/work';
+@import '../sass/block/dishes';
+@import '../sass/block/chefs';
+@import '../sass/block/recipes';
+@import '../sass/block/social';

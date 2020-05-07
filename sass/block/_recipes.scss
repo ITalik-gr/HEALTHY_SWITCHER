@@ -1,0 +1,172 @@
+.recipes {
+
+  &__wrap {
+    display: flex;
+    height: 455px;
+    justify-content: space-between;
+  }
+  &__main-example {
+    padding: 60px 65px;
+    min-width: 540px;
+    background-image: url(../img/main-example.svg);
+    position: relative;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    &__theme {
+      font-size: 10px;
+      text-transform: uppercase;
+      padding: 8px 13px;
+      border-radius: 4px;
+      color: #FFFFFF;
+      background: rgba(0, 0, 0, 0.411);
+    }
+    &__date {
+      margin-top: 65px;
+      font-size: 14px;
+      color: #FFFFFF;
+    }
+    &__title {
+      margin-top: 25px;
+      font-size: 24px;
+      color: #FFFFFF;
+    }
+    &__name {
+      margin-top: 45px;
+      font-size: 14px;
+      color: #FFFFFF;
+      
+    }
+    &__com-view {
+      display: flex;
+      flex-direction: row;
+      margin-top: 60px;
+      div {
+        display: flex;
+        margin: 0px 12px;
+        span {
+          margin-left: 15px;
+          font-size: 12px;
+          color: #FFFFFF;
+        }
+      }
+    }
+  }
+  &__card {
+    cursor: pointer;
+    margin-bottom: 15px;
+    padding: 23px 25px 25px 25px;
+    background: #252525;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    max-width: 540px;
+    transition: 0.5s all;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &:hover {
+      background: #34C759;
+      .recipes__card__theme {
+        background: #000000;  
+      }
+      .recipes__card__info {
+        img {
+          filter: grayscale(100%);
+        }
+        span {
+          color: #1A1A1A;
+        }
+      }
+      .recipes__card__title {
+        color: #252525;
+      }
+      .recipes__card__date {
+        color: #1A1A1A;
+      }
+      .vi {
+        opacity: 0;
+      }
+      .hide {
+        opacity: 1;
+      }
+    }
+    &__bg {
+      background-image: url(../../img/events_card.svg);
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    &__wrap {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      div {
+        display: flex;
+      }
+    }
+    &__title {
+      font-weight: 500;
+      font-size: 16px;
+      color: #FFFFFF;
+      line-height: 30px;
+    }
+    &__bottom {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__theme {
+      margin-right: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #0000005e;
+      border-radius: 4px;
+      a {
+        font-size: 10px;
+        padding: 9px 13px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+      }
+    }
+    &__date {
+      cursor: pointer;
+      font-size: 12px;
+      color: #B3B3B3;
+    }
+    &__info {
+      cursor: pointer;
+      margin-right: 25px;
+      .vi {
+        opacity: 1;
+      }
+      .hide {
+        opacity: 0;
+        transform: translateX(22px);
+      }
+      span {
+        font-size: 12px;
+        color: #D8D8D8;
+        margin-left: 15px;
+      }
+    }
+  }
+}
+.left-arrow {
+  top: 40px;
+  right: 40px;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.301);
+  border-radius: 100%;
+  transition: 0.5s all;
+  &:hover {
+    transform: rotate(-90deg);
+  }
+  img {
+    padding: 10px;
+  }
+}
