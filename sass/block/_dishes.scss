@@ -19,10 +19,6 @@
     border-radius: 6px;
     max-width: 350px;
     &:hover {
-      .dishes__btn {
-        background: #34C759;
-        border: 2px solid #34C759;
-      }
       .dishes__rate {
         filter: grayscale(0%); 
       }
@@ -86,6 +82,10 @@
     color: rgba(255, 255, 255, 0.5);
     border: 2px solid #303030;
     background: transparent;
+    &:hover {
+      background: #34C759;
+      border: 2px solid #34C759;
+    }
   }
   &__rate {
     display: flex;

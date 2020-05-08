@@ -230,6 +230,7 @@
   }
   .chefs {
     &__image {
+      justify-content: space-around;
       img {
         display: block;
         &:last-child {
